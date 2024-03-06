@@ -13,6 +13,7 @@ pipeline {
     }
     stage('Deploy') {
       steps {
+        sh 'ls non_existing_file.txt'
         echo 'deploy'
       }
     }
